@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.local.sillytavern</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/var/jb/usr/libexec/node26/node</string>
+		<string>--max-opt=0</string>
+		<string>--no-sparkplug</string>
+		<string>--regexp-interpret-all</string>
+		<string>--liftoff-only</string>
+		<string>--no-wasm-async-compilation</string>
+		<string>--max-old-space-size=384</string>
+		<string>--max-semi-space-size=16</string>
+		<string>--disable-wasm-trap-handler</string>
+		<string>--require</string>
+		<string>./nowasm.cjs</string>
+		<string>server.js</string>
+	</array>
+	<key>WorkingDirectory</key>
+	<string>/private/var/mobile/Containers/Shared/AppGroup/.jbroot-D2BC5EBC692FC309/var/mobile/st/SillyTavern-release</string>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>KeepAlive</key>
+	<true/>
+	<key>ThrottleInterval</key>
+	<integer>60</integer>
+	<key>ProcessType</key>
+	<string>Interactive</string>
+	<key>StandardOutPath</key>
+	<string>/private/var/mobile/Containers/Shared/AppGroup/.jbroot-D2BC5EBC692FC309/var/mobile/st/st.log</string>
+	<key>StandardErrorPath</key>
+	<string>/private/var/mobile/Containers/Shared/AppGroup/.jbroot-D2BC5EBC692FC309/var/mobile/st/st.err.log</string>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>HOME</key>
+		<string>/private/var/mobile</string>
+		<key>PATH</key>
+		<string>/var/jb/usr/bin:/var/jb/bin:/usr/bin:/bin</string>
+	</dict>
+</dict>
+</plist>
