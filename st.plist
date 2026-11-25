@@ -6,31 +6,29 @@
 	<string>com.local.sillytavern</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/var/jb/usr/bin/node</string>
+		<string>/private/var/mobile/Containers/Shared/AppGroup/.jbroot-D2BC5EBC692FC309/usr/bin/node26</string>
 		<string>--require</string>
-		<string>/var/mobile/st/SillyTavern-release/nowasm.cjs</string>
+		<string>./nowasm.cjs</string>
 		<string>server.js</string>
 	</array>
 	<key>WorkingDirectory</key>
-	<string>/var/mobile/st/SillyTavern-release</string>
+	<string>/private/var/mobile/Containers/Shared/AppGroup/.jbroot-D2BC5EBC692FC309/var/mobile/st/SillyTavern-release</string>
 	<key>RunAtLoad</key>
 	<true/>
 	<key>KeepAlive</key>
 	<true/>
 	<key>ThrottleInterval</key>
-	<integer>10</integer>
+	<integer>15</integer>
 	<key>StandardOutPath</key>
-	<string>/var/mobile/st/st.log</string>
+	<string>/private/var/mobile/Containers/Shared/AppGroup/.jbroot-D2BC5EBC692FC309/var/mobile/st/st.log</string>
 	<key>StandardErrorPath</key>
-	<string>/var/mobile/st/st.err.log</string>
+	<string>/private/var/mobile/Containers/Shared/AppGroup/.jbroot-D2BC5EBC692FC309/var/mobile/st/st.err.log</string>
 	<key>EnvironmentVariables</key>
 	<dict>
 		<key>HOME</key>
-		<string>/var/mobile</string>
+		<string>/private/var/mobile</string>
 		<key>PATH</key>
-		<string>/var/jb/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+		<string>/usr/bin:/bin:/usr/sbin:/sbin</string>
 	</dict>
-	<key>ProcessType</key>
-	<string>Interactive</string>
 </dict>
 </plist>
