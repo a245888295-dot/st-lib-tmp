@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.local.sillytavern</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/var/jb/usr/bin/node</string>
+		<string>--require</string>
+		<string>/var/mobile/st/SillyTavern-release/nowasm.cjs</string>
+		<string>server.js</string>
+	</array>
+	<key>WorkingDirectory</key>
+	<string>/var/mobile/st/SillyTavern-release</string>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>KeepAlive</key>
+	<true/>
+	<key>ThrottleInterval</key>
+	<integer>10</integer>
+	<key>StandardOutPath</key>
+	<string>/var/mobile/st/st.log</string>
+	<key>StandardErrorPath</key>
+	<string>/var/mobile/st/st.err.log</string>
+	<key>EnvironmentVariables</key>
+	<dict>
+		<key>HOME</key>
+		<string>/var/mobile</string>
+		<key>PATH</key>
+		<string>/var/jb/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+	</dict>
+	<key>ProcessType</key>
+	<string>Interactive</string>
+</dict>
+</plist>
